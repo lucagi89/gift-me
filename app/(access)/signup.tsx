@@ -32,7 +32,6 @@ export default function SignUpScreen() {
           {
             id: auth.currentUser.uid || "",
             email: auth.currentUser.email || "",
-            isOwner: false,
             isProfileComplete: false,
           },
           "users"

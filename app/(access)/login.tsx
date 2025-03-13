@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, TextInput, Button, StyleSheet, Text } from "react-native";
-import { handleUser, signInWithGoogle } from "../../services/auth";
+import { handleUser } from "../../services/auth";
 import { useRouter } from "expo-router";
 
 // import { NavigationProp } from "@react-navigation/native";
@@ -47,7 +47,7 @@ const Login = () => {
       />
       {errorMessage && <Text style={styles.errorText}>{errorMessage}</Text>}
       <Button title="Login" onPress={handleLogin} />
-      <Button title="Login with Google" onPress={signInWithGoogle} />
+      {/* <Button title="Login with Google" onPress={signInWithGoogle} /> */}
       <Button
         title="Don't have an account? Sign Up"
         onPress={() => router.push("/signup")}
