@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "gift-me"
+location: "europe-west3"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "gift-me-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
